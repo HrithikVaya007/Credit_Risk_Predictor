@@ -1,0 +1,106 @@
+.prediction-container{
+
+    display:flex;
+    justify-content:center;
+
+    margin:50px 0;
+
+}
+
+.prediction-card{
+
+    width:600px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.prediction-card h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.prediction-status{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.success-icon{
+
+    color:#22c55e;
+
+    font-size:70px;
+
+    margin-bottom:10px;
+
+}
+
+.danger-icon{
+
+    color:#ef4444;
+
+    font-size:70px;
+
+    margin-bottom:10px;
+
+}
+
+.prediction-details{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.prediction-details div{
+
+    background:#f8fafc;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+.prediction-details span{
+
+    color:#64748b;
+
+}
+
+.prediction-details h2{
+
+    color:#2563eb;
+
+    margin-top:10px;
+
+}
+
+.prediction-details h3{
+
+    margin-top:10px;
+
+    color:#0f172a;
+
+}

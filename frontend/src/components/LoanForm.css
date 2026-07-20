@@ -1,0 +1,287 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+.loan-container{
+    min-height:100vh;
+    width:100%;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.loan-wrapper{
+    width:450px;
+    background:#111827;
+    color:white;
+    border-radius:20px 0 0 20px;
+    padding:45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.loan-form{
+    width:650px;
+    background:white;
+    padding:40px;
+    border-radius:0 20px 20px 0;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* ===========================
+   Left Side
+=========================== */
+
+.loan-title{
+    font-size:34px;
+    margin-top:20px;
+    font-weight:700;
+}
+
+.loan-description{
+    margin-top:15px;
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
+.loan-feature{
+    margin-top:40px;
+}
+
+.loan-feature-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.loan-feature-icon{
+    width:45px;
+    height:45px;
+    background:#2563eb;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+.loan-animation{
+    position:relative;
+    width:150px;
+    height:150px;
+}
+
+.animation-ring,
+.animation-ring2,
+.animation-ring3{
+
+    position:absolute;
+    border-radius:50%;
+    border:2px solid rgba(255,255,255,.15);
+
+}
+
+.animation-ring{
+
+    width:150px;
+    height:150px;
+    animation:spin 10s linear infinite;
+
+}
+
+.animation-ring2{
+
+    width:110px;
+    height:110px;
+    top:20px;
+    left:20px;
+    animation:spinReverse 7s linear infinite;
+
+}
+
+.animation-ring3{
+
+    width:70px;
+    height:70px;
+    top:40px;
+    left:40px;
+    background:#2563eb;
+    opacity:.8;
+
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+@keyframes spinReverse{
+
+    from{
+        transform:rotate(360deg);
+    }
+
+    to{
+        transform:rotate(0deg);
+    }
+
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.loan-form label{
+
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+
+}
+
+.loan-form span{
+
+    font-size:14px;
+    font-weight:600;
+    color:#334155;
+
+}
+
+.loan-form input,
+.loan-form select{
+
+    padding:12px 15px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+    outline:none;
+    transition:.3s;
+    font-size:14px;
+
+}
+
+.loan-form input:focus,
+.loan-form select:focus{
+
+    border-color:#2563eb;
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+.loan-form input::placeholder{
+
+    color:#94a3b8;
+
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.predict-btn{
+
+    grid-column:span 2;
+    margin-top:20px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.predict-btn:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-2px);
+
+}
+
+.predict-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:1100px){
+
+.loan-container{
+
+    flex-direction:column;
+
+}
+
+.loan-wrapper{
+
+    width:100%;
+    border-radius:20px 20px 0 0;
+
+}
+
+.loan-form{
+
+    width:100%;
+    border-radius:0 0 20px 20px;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.loan-form{
+
+    grid-template-columns:1fr;
+
+}
+
+.predict-btn{
+
+    grid-column:span 1;
+
+}
+
+}
