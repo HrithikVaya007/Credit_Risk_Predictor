@@ -16,9 +16,6 @@ venv/
 .venv/
 env/
 
-# ML model binaries (large files – regenerate via train.py)
-backend/app/model/*.pkl
-
 # Dataset (usually too large for GitHub)
 backend/dataset/
 
